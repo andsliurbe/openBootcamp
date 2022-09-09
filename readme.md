@@ -1,3 +1,3 @@
 descripcion openbootcamp
 
-lo que tu quieras jajaj
+lo que tu quieragit branch -D nombreramas jajaj
