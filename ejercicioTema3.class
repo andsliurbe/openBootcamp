@@ -1,0 +1,38 @@
+
+
+// primera parte
+
+public class ejercicioTema3 {
+    public static void main(String args[]) {
+     
+        ;
+      System.out.println("Sum "+suma(1,2,3));
+    }
+    
+    public static int suma(int uno ,int dos ,int tres){
+        
+        return uno+dos+tres;
+    }
+}
+
+
+
+// segunda parte 
+ class coche
+{
+    public int puertas=2;
+    
+    public  int incremento( int param1){
+        return puertas+param1;
+    }
+}
+
+  class ejercicioTema3 {
+    
+    public static void main (String args[])
+    {
+         coche miCoche = new coche();
+         System.out.println(miCoche.incremento(1));
+    }
+    
+}
