@@ -1,0 +1,88 @@
+public class Ejerciciotema4 {
+    int numeroIf =12;
+    int numeroWhile=0;
+    String estacion="Verano";
+    public static void main(String args[]) {
+            Ejerciciotema4 miclase= new Ejerciciotema4();
+            
+            
+            primerpunto(miclase.numeroIf);
+            segundopunto(miclase.numeroWhile);
+            tercerpunto(miclase.numeroWhile);
+            cuartopunto();
+            quintopunto(miclase.estacion);
+    }
+    
+    public static  void primerpunto(int numeroIf){
+    
+        System.out.println("\n1* Usando un if, crear una condición que compare si la variable numeroIf es positivo, negativo, o 0. :");
+    
+    if (numeroIf>0)
+    {   
+         System.out.println("RE:numeroIf :[ "+numeroIf+"] Es Positivo");
+    } else if (numeroIf<0)
+    {
+         System.out.println("RE:numeroIf :[ "+numeroIf+"] Es Negativo");
+    } else if (numeroIf==0)
+    {
+         System.out.println("RE:numeroIf :[ "+numeroIf+"] Es Igual A Cero(0)");
+    } 
+    
+    }
+    
+    
+    public static void segundopunto(int numeroWhile){
+        
+        System.out.println("\n2* Crea un bucle While, este bucle tendrá que tener como condición que la variable numeroWhile sea inferior a 3, el bloque de código que tendrá el bucle deberá:");
+        
+        while(numeroWhile<3)
+        {
+              System.out.println("RE:["+numeroWhile+"] Incrementado a > ["+(numeroWhile+1)+"]");
+              numeroWhile++;
+        }
+        
+        
+    }
+    
+    public static void tercerpunto(int numeroWhile){
+        
+         System.out.println("\n3* Para el bucle Do While, deberás crear la misma estructura que en el While, pero solo se debe ejecutar una vez.:");
+            do {
+                    System.out.println("RE:Ejectudao una vez . numeroWhile ->["+numeroWhile+"]");
+                    numeroWhile=99;
+            }while(numeroWhile<3);
+    }
+    
+    public static void cuartopunto()
+    {
+        
+         System.out.println("\n4*Para el bucle For, crea una variable numeroFor, esta variable tendrá como valor 0 y su condición será que la variable sea igual o menor que 3, se irá incrementando en 1 su valor cada vez que se ejecute y deberá mostrarse por pantalla.:");
+         
+         
+         for (int numeroFor =0;numeroFor<=3;numeroFor++)
+         {
+             System.out.println("RE:imprimo numeroFor->["+numeroFor+"]");
+         }
+    }
+    
+    public static void quintopunto(String estacion)
+    {
+        System.out.println("\n5* Por último, para el Switch, deberás crear la variable estacion, y distintos case para las cuatro estaciones del año. Dependiendo del valor de la variable estacion se deberá mandar un mensaje por consola informando de la estación en la que está. También habrá que poner un default para cuando el valor de la variable no sea una estación.\n"); 
+               switch(estacion){
+                case "Primavera" : System.out.println("RE: Es Verano"); 
+                break;
+                case "Verano" : System.out.println("RE: Es Verano"); 
+                break;
+                case "Otoño" : System.out.println("RE: Es Verano"); 
+                break;
+                case "Invierno" : System.out.println("RE: Es Verano"); 
+                break;
+                default: System.out.println("RE: No Es Una Estacion"); 
+            }
+    }
+    
+     
+    
+    
+    
+}
