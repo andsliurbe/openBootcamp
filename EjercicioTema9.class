@@ -1,0 +1,74 @@
+  public class EjercicioTema9{
+     
+     public static void main(String args[]) {
+        
+        Cliente cliente=new Cliente();
+            mostrarPropiedadesCliete(29,"Carlos","3024243668","reditobancolombia",cliente);
+            
+             Trabajador trabajador=new Trabajador();
+             mostrarPropiedadesTrabajador(29,"Carlos","3024243668",1500,trabajador);
+        
+      
+    }
+    
+    public static void mostrarPropiedadesCliete(int edad , String nombre, String telefono,String credito,Cliente cliente){
+                    cliente.edad=edad;
+                    cliente.nombre=nombre;
+                    cliente.telefono=telefono;
+                    cliente.setCredito(credito);
+                        System.out.println("*******************************************");
+                System.out.println("edad->"+cliente.edad);
+                System.out.println("Nombre->"+cliente.nombre);
+                System.out.println("Telefono->"+cliente.telefono);
+                 System.out.println("Credito->"+cliente.getCredito());
+    }
+    
+    
+        public static void mostrarPropiedadesTrabajador(int edad , String nombre, String telefono,float salario,Trabajador trabajador){
+                    trabajador.edad=edad;
+                    trabajador.nombre=nombre;
+                    trabajador.telefono=telefono;
+                    trabajador.setSalasrio(salario);
+                    System.out.println("\n*******************************************");
+                System.out.println("edad->"+trabajador.edad);
+                System.out.println("Nombre->"+trabajador.nombre);
+                System.out.println("Telefono->"+trabajador.telefono);
+                 System.out.println("Salario->"+trabajador.getSalario());
+    }
+ }
+ 
+ 
+ class Persona {
+     int edad =5;
+     String nombre;
+     String telefono;
+   
+}
+
+class Cliente extends Persona{
+    private String credito;
+    
+    
+    public void setCredito(String credito){
+         this.credito=credito;
+    }
+    
+    public String getCredito(){
+        return this.credito;
+    }
+    
+}
+
+
+class Trabajador extends Persona{
+    private float salario;
+    
+    public void setSalasrio(float salario){
+         this.salario=salario;
+    }
+    
+    public float getSalario(){
+        return this.salario;
+    }
+    
+}
