@@ -1,0 +1,15 @@
+{
+  "name": "tema-10",
+  "version": "1.0.0",
+  "description": "tema-0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "carlos",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}
