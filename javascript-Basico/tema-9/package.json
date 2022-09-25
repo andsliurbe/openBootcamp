@@ -1,0 +1,15 @@
+{
+  "name": "tema-9",
+  "version": "1.0.0",
+  "description": "tema-9",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "carlos",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.8.2"
+  }
+}
