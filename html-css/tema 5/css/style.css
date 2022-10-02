@@ -1,0 +1,13 @@
+
+.contenedor{
+    
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+img{
+    width: 300px;
+    height: 300px;
+    margin: 1px;
+}
